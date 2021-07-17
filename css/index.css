@@ -1,0 +1,147 @@
+body{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+/* Header Block */
+.header{
+  width: 100vw;
+  height: 65%;
+  background-image: url('../images/banner.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 6em;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header_content{
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.header_content img{
+  width: 30em;
+  height: 10em;
+}
+.header_content h1{
+  font-size: 45px;
+  margin-bottom: 0.2em;
+  text-align: center;
+  color: white;
+}
+.header_content a, p, strong{
+  font-size: 20px;
+  text-align: center;
+  color: white;
+}
+.button{
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+  background: #6fac1b;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-top: 2em;
+}
+.button:hover{
+  background-color: #3b5c0e;
+}
+/* Content block */
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.content p{
+  text-align: center;
+  font: 18px Arial;
+  color: grey;
+}
+.content_blocks-2{
+  display: flex;
+  justify-content: center;
+  height: 40em;
+}
+.content_blocks-2_left{
+  width: 40%;
+  margin-right: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content_blocks-2_left img{
+  width: 13em;
+  height: 13em;
+}
+.content_blocks-2_right{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content_blocks-2_right img{
+  width: 13em;
+  height: 13em;
+}
+.title{
+  text-align: center;
+  margin-top: 2%;
+}
+.title p{
+  margin-top: 0;
+  font: 12px Arial;
+}
+.title h2{
+  margin-bottom: 0.3em;
+}
+/* footer */
+footer{
+  width: 100%;
+  height: 10em;
+  background-color: #2B2B2B;
+  margin-top: 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer p{
+  color: grey;
+}
+/* Medias */
+@media screen and (max-width : 1000px) {
+  .header_content h1{
+    width: 100%;
+    font-size: 22px;
+    text-align: center;
+  }
+  .header a, p, strong{
+    font-size: 19px;
+    margin-top: 0em;
+  }
+  .content_blocks-2{
+    height: 70em;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .content_blocks-2_left, .content_blocks-2_right{
+    margin-bottom: 3em;
+    width: 100%;
+  }
+  .content_blocks-2_left{
+    margin-left: 3em;
+  }
+}
+@media screen and (max-width : 500px) {
+  .header_content img{
+    width: 16em;
+    height: 7em;
+  }
+}

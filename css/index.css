@@ -2,10 +2,12 @@ body{
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
 }
 /* Header Block */
 .header{
-  width: 100vw;
+  width: 102%;
   height: 65%;
   background-image: url('../images/banner.gif');
   background-size: cover;
